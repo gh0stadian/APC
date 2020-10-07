@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/untitled1.dir/main.cpp.o  -o untitled1 
+/usr/bin/c++   -pedantic -std=c++17 -pthread -Wall -Wextra -Wformat=2 -Wlogical-op -Wmissing-include-dirs -Wredundant-decls -Wsign-conversion -Wstrict-overflow=2 -Wundef -Wnull-dereference -Wuninitialized -Walloca -Wcast-qual -g   CMakeFiles/untitled1.dir/palindrome.cpp.o CMakeFiles/untitled1.dir/sudoku.cpp.o  -o untitled1 

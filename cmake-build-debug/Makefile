@@ -123,32 +123,59 @@ untitled1/fast:
 	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-main.o: main.cpp.o
+palindrome.o: palindrome.cpp.o
 
-.PHONY : main.o
+.PHONY : palindrome.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.cpp.o
-.PHONY : main.cpp.o
+palindrome.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/palindrome.cpp.o
+.PHONY : palindrome.cpp.o
 
-main.i: main.cpp.i
+palindrome.i: palindrome.cpp.i
 
-.PHONY : main.i
+.PHONY : palindrome.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.cpp.i
-.PHONY : main.cpp.i
+palindrome.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/palindrome.cpp.i
+.PHONY : palindrome.cpp.i
 
-main.s: main.cpp.s
+palindrome.s: palindrome.cpp.s
 
-.PHONY : main.s
+.PHONY : palindrome.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.cpp.s
-.PHONY : main.cpp.s
+palindrome.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/palindrome.cpp.s
+.PHONY : palindrome.cpp.s
+
+sudoku.o: sudoku.cpp.o
+
+.PHONY : sudoku.o
+
+# target to build an object file
+sudoku.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sudoku.cpp.o
+.PHONY : sudoku.cpp.o
+
+sudoku.i: sudoku.cpp.i
+
+.PHONY : sudoku.i
+
+# target to preprocess a source file
+sudoku.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sudoku.cpp.i
+.PHONY : sudoku.cpp.i
+
+sudoku.s: sudoku.cpp.s
+
+.PHONY : sudoku.s
+
+# target to generate assembly for a file
+sudoku.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sudoku.cpp.s
+.PHONY : sudoku.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... untitled1"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... palindrome.o"
+	@echo "... palindrome.i"
+	@echo "... palindrome.s"
+	@echo "... sudoku.o"
+	@echo "... sudoku.i"
+	@echo "... sudoku.s"
 .PHONY : help
 
 

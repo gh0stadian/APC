@@ -82,7 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/gh0stadian/CLionProjects/untitled1/main.cpp">
+		<Unit filename="/home/gh0stadian/CLionProjects/untitled1/palindrome.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="/home/gh0stadian/CLionProjects/untitled1/sudoku.cpp">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="/home/gh0stadian/CLionProjects/untitled1/CMakeLists.txt">

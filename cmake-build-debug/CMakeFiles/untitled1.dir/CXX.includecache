@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/gh0stadian/CLionProjects/untitled1/main.cpp
+/home/gh0stadian/CLionProjects/untitled1/sudoku.cpp
 iostream
+-
+fstream
 -
 
