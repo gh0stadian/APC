@@ -11,4 +11,10 @@ iostream
 -
 fstream
 -
+search.h
+-
+string
+-
+cstring
+-
 

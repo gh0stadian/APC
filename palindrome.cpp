@@ -5,10 +5,6 @@ int get_palindrome_length(std::string string){
     int position = 0;
     int palindrome_length = 0;
     for (int i = int(string.length()) - 1; i >= 0; i--) {
-        if (i < position && string.length() % 2){
-            palindrome_length++;
-            break;
-        }
         if (string[unsigned (position)] == string[unsigned(i)]){
             palindrome_length++;
             position++;
