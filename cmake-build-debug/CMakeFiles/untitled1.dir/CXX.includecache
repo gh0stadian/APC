@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/gh0stadian/CLionProjects/untitled1/sudoku.cpp
+/home/gh0stadian/CLionProjects/untitled1/substring.cpp
 iostream
 -
 fstream
@@ -16,5 +16,7 @@ search.h
 string
 -
 cstring
+-
+vector
 -
 

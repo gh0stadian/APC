@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gh0stadian/CLionProjects/untitled1/palindrome.cpp" "/home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/palindrome.cpp.o"
-  "/home/gh0stadian/CLionProjects/untitled1/sudoku.cpp" "/home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/sudoku.cpp.o"
+  "/home/gh0stadian/CLionProjects/untitled1/substring.cpp" "/home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/substring.cpp.o"
+  "/home/gh0stadian/CLionProjects/untitled1/sudoku/sudoku.cpp" "/home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

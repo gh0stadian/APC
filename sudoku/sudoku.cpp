@@ -29,6 +29,16 @@ int is_possible(unsigned position, unsigned int x, unsigned int y, char num_to_p
     return 1;
 }
 
+int check_invalid_characters(std::string line){
+    for (unsigned int i = 0; i < 81; ++i) {
+        int ansi_number = int(line[i]);
+        if (!((ansi_number > 47 && ansi_number < 58) || ansi_number == 46)){
+            return 1;
+        }
+    }
+    return 0;
+}
+
 int is_correct(std::string line){
     for (unsigned int i = 0; i < 81; ++i) {
         if (!is_possible(i, i%9, i/9, line[i], line)){
@@ -54,7 +64,7 @@ void solve_sudoku(std::string line, std::string *solved_sudoku){
     *solved_sudoku = line;
 }
 
-int main(int argc, char * argv[]) {
+int main1(int argc, char * argv[]) {
     int line_counter = 0;
     std::ifstream input_file;
     std::ofstream output_file;
@@ -87,12 +97,12 @@ int main(int argc, char * argv[]) {
     }
     while (std::getline(*input, line)){
         line_counter++;
-        if (line == empty_line){
-            std::cout << "Invalid input (" << line_counter << ")" << std::endl;
-            return 1;
-        }
         if (line.length() != 81){
             std::cout << "line length != 81 characters (" << line_counter << ")" << std::endl;
+            return 1;
+        }
+        if (check_invalid_characters(line)){
+            std::cout << "invalid character (" << line_counter << ")" << std::endl;
             return 1;
         }
         std::string solved_sudoku = line;
