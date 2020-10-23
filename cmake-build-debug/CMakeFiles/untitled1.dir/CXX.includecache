@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/gh0stadian/CLionProjects/untitled1/substring.cpp
+/home/gh0stadian/CLionProjects/untitled1/sort.cpp
 iostream
 -
 fstream
--
-search.h
 -
 string
 -
 cstring
 -
 vector
+-
+algorithm
 -
 

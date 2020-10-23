@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/untitled1.dir/substring.cpp.o"
+  "CMakeFiles/untitled1.dir/sort.cpp.o"
+  "CMakeFiles/untitled1.dir/substring/substring.cpp.o"
   "CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.o"
   "untitled1"
   "untitled1.pdb"

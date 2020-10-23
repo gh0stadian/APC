@@ -143,32 +143,59 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-substring.o: substring.cpp.o
+sort.o: sort.cpp.o
 
-.PHONY : substring.o
+.PHONY : sort.o
 
 # target to build an object file
-substring.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/substring.cpp.o
-.PHONY : substring.cpp.o
+sort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sort.cpp.o
+.PHONY : sort.cpp.o
 
-substring.i: substring.cpp.i
+sort.i: sort.cpp.i
 
-.PHONY : substring.i
+.PHONY : sort.i
 
 # target to preprocess a source file
-substring.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/substring.cpp.i
-.PHONY : substring.cpp.i
+sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sort.cpp.i
+.PHONY : sort.cpp.i
 
-substring.s: substring.cpp.s
+sort.s: sort.cpp.s
 
-.PHONY : substring.s
+.PHONY : sort.s
 
 # target to generate assembly for a file
-substring.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/substring.cpp.s
-.PHONY : substring.cpp.s
+sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sort.cpp.s
+.PHONY : sort.cpp.s
+
+substring/substring.o: substring/substring.cpp.o
+
+.PHONY : substring/substring.o
+
+# target to build an object file
+substring/substring.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/substring/substring.cpp.o
+.PHONY : substring/substring.cpp.o
+
+substring/substring.i: substring/substring.cpp.i
+
+.PHONY : substring/substring.i
+
+# target to preprocess a source file
+substring/substring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/substring/substring.cpp.i
+.PHONY : substring/substring.cpp.i
+
+substring/substring.s: substring/substring.cpp.s
+
+.PHONY : substring/substring.s
+
+# target to generate assembly for a file
+substring/substring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/substring/substring.cpp.s
+.PHONY : substring/substring.cpp.s
 
 sudoku/sudoku.o: sudoku/sudoku.cpp.o
 
@@ -206,9 +233,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... substring.o"
-	@echo "... substring.i"
-	@echo "... substring.s"
+	@echo "... sort.o"
+	@echo "... sort.i"
+	@echo "... sort.s"
+	@echo "... substring/substring.o"
+	@echo "... substring/substring.i"
+	@echo "... substring/substring.s"
 	@echo "... sudoku/sudoku.o"
 	@echo "... sudoku/sudoku.i"
 	@echo "... sudoku/sudoku.s"

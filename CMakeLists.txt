@@ -6,4 +6,4 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
 set(CMAKE_CXX_STANDARD 17)
 
 
-add_executable(untitled1 sudoku/sudoku.cpp substring.cpp)
+add_executable(untitled1 sudoku/sudoku.cpp substring/substring.cpp sort.cpp)

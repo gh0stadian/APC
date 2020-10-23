@@ -82,7 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/gh0stadian/CLionProjects/untitled1/substring.cpp">
+		<Unit filename="/home/gh0stadian/CLionProjects/untitled1/sort.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="/home/gh0stadian/CLionProjects/untitled1/substring/substring.cpp">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="/home/gh0stadian/CLionProjects/untitled1/sudoku/sudoku.cpp">
