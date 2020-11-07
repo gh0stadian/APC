@@ -16,7 +16,7 @@ std::string getResultString(char *buffer, std::string * prev_last_X_character, s
     return result_string;
 }
 
-int main2(int argc, char * argv[]) {
+int main(int argc, char * argv[]) {
     if(argc != 4){
         return 1;
     }
@@ -34,7 +34,7 @@ int main2(int argc, char * argv[]) {
     }
 
     uint32_t N = strtoul (argv[3], nullptr, 10);
-    unsigned int size = 20;
+    unsigned int size = 50;
     std::string prev_last_X_character = "";
     unsigned long position = 1;
     std::vector<uint32_t> positions = {};
