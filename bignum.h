@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include <iostream>
 #include <algorithm>
+#include <regex>
 
 #define SUPPORT_DIVISION 0 // define as 1 when you have implemented the division
 #define SUPPORT_IFSTREAM 0 // define as 1 when you have implemented the input >>
@@ -30,9 +31,36 @@ public:
         } while (n > 0);
     }
     explicit BigNum(const std::string& str){
-        for (int32_t i = str.length()-1; i >= 0; i--){
-            value.push_back(str[static_cast<unsigned long>(i)] - '0');
-        }
+            std::string str2 = str;
+            if (str2.at(0) == '-'){
+                sign = false;
+                str2 = str2.substr(1);
+            }
+            if (str2.at(0) == '+'){
+                str2 = str2.substr(1);
+            }
+            if (str2.at(0) == '0'){
+                uint32_t i;
+                for (i = 0; i < str2.length(); i++){
+                    if (str2[i] != '0'){
+                        break;
+                    }
+                }
+                if (i == str2.length()){
+                    str2 = "0";
+                    sign = true;
+                }
+                else {
+                    str2 = str2.substr(i);
+                }
+            }
+            for (int32_t i = str2.length()-1; i >= 0; i--){
+                int number = str2[static_cast<unsigned long>(i)] - '0';
+                if (!(number >=0 && number < 10)){
+                    throw "invalid input";
+                }
+                value.push_back(number);
+            }
     }
 
     // copy
@@ -155,13 +183,23 @@ public:
                 new_value[i+j] %= 10;
             }
         }
-        while(new_value[new_value.size()-1] == 0){
-            new_value.pop_back();
+        for (uint32_t i = new_value.size()-1; i >= 0; i--){
+            if (new_value[i] == 0){
+                new_value.pop_back();
+            }
+            else {
+                break;
+            }
+            if (i == 0){
+                new_value.push_back(0);
+                sign = true;
+                break;
+            }
         }
         value = new_value;
         return *this;
     }
-    
+
 #if SUPPORT_DIVISION == 1
     BigNum& operator/=(const BigNum& rhs); // bonus
     BigNum& operator%=(const BigNum& rhs); // bonus
