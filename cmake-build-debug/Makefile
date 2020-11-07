@@ -68,24 +68,13 @@ RM = /home/gh0stadian/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gh0stadian/CLionProjects/untitled1
+CMAKE_SOURCE_DIR = /home/gh0stadian/CLionProjects/APC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gh0stadian/CLionProjects/untitled1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gh0stadian/CLionProjects/APC/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/gh0stadian/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -98,11 +87,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/gh0stadian/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles /home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles /home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named substring
+
+# Build rule for target.
+substring: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 substring
+.PHONY : substring
+
+# fast build rule for target.
+substring/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/substring.dir/build.make CMakeFiles/substring.dir/build
+.PHONY : substring/fast
+
+#=============================================================================
 # Target rules for targets named untitled1
 
 # Build rule for target.
@@ -143,32 +156,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-sort.o: sort.cpp.o
+bignum.o: bignum.cpp.o
 
-.PHONY : sort.o
+.PHONY : bignum.o
 
 # target to build an object file
-sort.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sort.cpp.o
-.PHONY : sort.cpp.o
+bignum.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/bignum.cpp.o
+.PHONY : bignum.cpp.o
 
-sort.i: sort.cpp.i
+bignum.i: bignum.cpp.i
 
-.PHONY : sort.i
+.PHONY : bignum.i
 
 # target to preprocess a source file
-sort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sort.cpp.i
-.PHONY : sort.cpp.i
+bignum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/bignum.cpp.i
+.PHONY : bignum.cpp.i
 
-sort.s: sort.cpp.s
+bignum.s: bignum.cpp.s
 
-.PHONY : sort.s
+.PHONY : bignum.s
 
 # target to generate assembly for a file
-sort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sort.cpp.s
-.PHONY : sort.cpp.s
+bignum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/bignum.cpp.s
+.PHONY : bignum.cpp.s
 
 substring/substring.o: substring/substring.cpp.o
 
@@ -176,7 +189,7 @@ substring/substring.o: substring/substring.cpp.o
 
 # target to build an object file
 substring/substring.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/substring/substring.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/substring.dir/build.make CMakeFiles/substring.dir/substring/substring.cpp.o
 .PHONY : substring/substring.cpp.o
 
 substring/substring.i: substring/substring.cpp.i
@@ -185,7 +198,7 @@ substring/substring.i: substring/substring.cpp.i
 
 # target to preprocess a source file
 substring/substring.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/substring/substring.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/substring.dir/build.make CMakeFiles/substring.dir/substring/substring.cpp.i
 .PHONY : substring/substring.cpp.i
 
 substring/substring.s: substring/substring.cpp.s
@@ -194,35 +207,8 @@ substring/substring.s: substring/substring.cpp.s
 
 # target to generate assembly for a file
 substring/substring.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/substring/substring.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/substring.dir/build.make CMakeFiles/substring.dir/substring/substring.cpp.s
 .PHONY : substring/substring.cpp.s
-
-sudoku/sudoku.o: sudoku/sudoku.cpp.o
-
-.PHONY : sudoku/sudoku.o
-
-# target to build an object file
-sudoku/sudoku.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.o
-.PHONY : sudoku/sudoku.cpp.o
-
-sudoku/sudoku.i: sudoku/sudoku.cpp.i
-
-.PHONY : sudoku/sudoku.i
-
-# target to preprocess a source file
-sudoku/sudoku.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.i
-.PHONY : sudoku/sudoku.cpp.i
-
-sudoku/sudoku.s: sudoku/sudoku.cpp.s
-
-.PHONY : sudoku/sudoku.s
-
-# target to generate assembly for a file
-sudoku/sudoku.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.s
-.PHONY : sudoku/sudoku.cpp.s
 
 # Help Target
 help:
@@ -232,16 +218,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... substring"
 	@echo "... untitled1"
-	@echo "... sort.o"
-	@echo "... sort.i"
-	@echo "... sort.s"
+	@echo "... bignum.o"
+	@echo "... bignum.i"
+	@echo "... bignum.s"
 	@echo "... substring/substring.o"
 	@echo "... substring/substring.i"
 	@echo "... substring/substring.s"
-	@echo "... sudoku/sudoku.o"
-	@echo "... sudoku/sudoku.i"
-	@echo "... sudoku/sudoku.s"
 .PHONY : help
 
 

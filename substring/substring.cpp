@@ -16,7 +16,7 @@ std::string getResultString(char *buffer, std::string * prev_last_X_character, s
     return result_string;
 }
 
-int main(int argc, char * argv[]) {
+int main2(int argc, char * argv[]) {
     if(argc != 4){
         return 1;
     }

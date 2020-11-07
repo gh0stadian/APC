@@ -63,10 +63,10 @@ RM = /home/gh0stadian/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gh0stadian/CLionProjects/untitled1
+CMAKE_SOURCE_DIR = /home/gh0stadian/CLionProjects/APC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gh0stadian/CLionProjects/untitled1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gh0stadian/CLionProjects/APC/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled1.dir/depend.make
@@ -77,60 +77,30 @@ include CMakeFiles/untitled1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/untitled1.dir/flags.make
 
-CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.o: ../sudoku/sudoku.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.o -c /home/gh0stadian/CLionProjects/untitled1/sudoku/sudoku.cpp
+CMakeFiles/untitled1.dir/bignum.cpp.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/bignum.cpp.o: ../bignum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled1.dir/bignum.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/bignum.cpp.o -c /home/gh0stadian/CLionProjects/APC/bignum.cpp
 
-CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gh0stadian/CLionProjects/untitled1/sudoku/sudoku.cpp > CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.i
+CMakeFiles/untitled1.dir/bignum.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/bignum.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gh0stadian/CLionProjects/APC/bignum.cpp > CMakeFiles/untitled1.dir/bignum.cpp.i
 
-CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gh0stadian/CLionProjects/untitled1/sudoku/sudoku.cpp -o CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.s
-
-CMakeFiles/untitled1.dir/substring/substring.cpp.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/substring/substring.cpp.o: ../substring/substring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled1.dir/substring/substring.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/substring/substring.cpp.o -c /home/gh0stadian/CLionProjects/untitled1/substring/substring.cpp
-
-CMakeFiles/untitled1.dir/substring/substring.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/substring/substring.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gh0stadian/CLionProjects/untitled1/substring/substring.cpp > CMakeFiles/untitled1.dir/substring/substring.cpp.i
-
-CMakeFiles/untitled1.dir/substring/substring.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/substring/substring.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gh0stadian/CLionProjects/untitled1/substring/substring.cpp -o CMakeFiles/untitled1.dir/substring/substring.cpp.s
-
-CMakeFiles/untitled1.dir/sort.cpp.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/sort.cpp.o: ../sort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled1.dir/sort.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/sort.cpp.o -c /home/gh0stadian/CLionProjects/untitled1/sort.cpp
-
-CMakeFiles/untitled1.dir/sort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/sort.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gh0stadian/CLionProjects/untitled1/sort.cpp > CMakeFiles/untitled1.dir/sort.cpp.i
-
-CMakeFiles/untitled1.dir/sort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/sort.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gh0stadian/CLionProjects/untitled1/sort.cpp -o CMakeFiles/untitled1.dir/sort.cpp.s
+CMakeFiles/untitled1.dir/bignum.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/bignum.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gh0stadian/CLionProjects/APC/bignum.cpp -o CMakeFiles/untitled1.dir/bignum.cpp.s
 
 # Object files for target untitled1
 untitled1_OBJECTS = \
-"CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.o" \
-"CMakeFiles/untitled1.dir/substring/substring.cpp.o" \
-"CMakeFiles/untitled1.dir/sort.cpp.o"
+"CMakeFiles/untitled1.dir/bignum.cpp.o"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
-untitled1: CMakeFiles/untitled1.dir/sudoku/sudoku.cpp.o
-untitled1: CMakeFiles/untitled1.dir/substring/substring.cpp.o
-untitled1: CMakeFiles/untitled1.dir/sort.cpp.o
+untitled1: CMakeFiles/untitled1.dir/bignum.cpp.o
 untitled1: CMakeFiles/untitled1.dir/build.make
 untitled1: CMakeFiles/untitled1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable untitled1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable untitled1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -143,6 +113,6 @@ CMakeFiles/untitled1.dir/clean:
 .PHONY : CMakeFiles/untitled1.dir/clean
 
 CMakeFiles/untitled1.dir/depend:
-	cd /home/gh0stadian/CLionProjects/untitled1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gh0stadian/CLionProjects/untitled1 /home/gh0stadian/CLionProjects/untitled1 /home/gh0stadian/CLionProjects/untitled1/cmake-build-debug /home/gh0stadian/CLionProjects/untitled1/cmake-build-debug /home/gh0stadian/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gh0stadian/CLionProjects/APC/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gh0stadian/CLionProjects/APC /home/gh0stadian/CLionProjects/APC /home/gh0stadian/CLionProjects/APC/cmake-build-debug /home/gh0stadian/CLionProjects/APC/cmake-build-debug /home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles/untitled1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/untitled1.dir/depend
 

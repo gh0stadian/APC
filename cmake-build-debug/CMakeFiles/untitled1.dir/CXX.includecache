@@ -6,16 +6,20 @@
 
 #IncludeRegexTransform: 
 
-/home/gh0stadian/CLionProjects/untitled1/sort.cpp
+/home/gh0stadian/CLionProjects/APC/bignum.cpp
 iostream
 -
-fstream
+vector
 -
+bignum.h
+/home/gh0stadian/CLionProjects/APC/bignum.h
+
+/home/gh0stadian/CLionProjects/APC/bignum.h
 string
 -
-cstring
+stdint.h
 -
-vector
+iostream
 -
 algorithm
 -
