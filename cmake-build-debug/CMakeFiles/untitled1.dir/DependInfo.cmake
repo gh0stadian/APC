@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gh0stadian/CLionProjects/APC/bignum.cpp" "/home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles/untitled1.dir/bignum.cpp.o"
+  "/home/gh0stadian/CLionProjects/APC/netpbm.cpp" "/home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles/untitled1.dir/netpbm.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -6,5 +6,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
 set(CMAKE_CXX_STANDARD 17)
 
 
-add_executable(untitled1 bignum.cpp)
-add_executable(substring substring/substring.cpp)
+#add_executable(untitled1 huffman/huffman_code.cpp)
+#add_executable(untitled1 Graph.cpp)
+#add_executable(untitled1 BigNum/bignum.cpp)
+#add_executable(untitled1 sort.cpp)
+#add_executable(substring substring/substring.cpp)
+add_executable(untitled1 netpbm.cpp)

@@ -19,7 +19,7 @@ public:
     }
 };
 
-std::vector<std::string> convert_string_to_array(std::string string){
+std::vector<std::string> iadoconvert_string_to_array(std::string string){
     std::vector<std::string> output;
     std::string number;
     number.push_back(string[0]);

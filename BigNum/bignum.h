@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <regex>
 
+
 #define SUPPORT_DIVISION 0 // define as 1 when you have implemented the division
 #define SUPPORT_IFSTREAM 0 // define as 1 when you have implemented the input >>
 
@@ -19,7 +20,7 @@ public:
     BigNum(){
         value.push_back(0);
     }
-    BigNum(int64_t n){
+    explicit BigNum(int64_t n){
         if (n < 0) {
             sign = false;
             n *= -1;
@@ -31,36 +32,39 @@ public:
         } while (n > 0);
     }
     explicit BigNum(const std::string& str){
-            std::string str2 = str;
-            if (str2.at(0) == '-'){
-                sign = false;
-                str2 = str2.substr(1);
-            }
-            if (str2.at(0) == '+'){
-                str2 = str2.substr(1);
-            }
-            if (str2.at(0) == '0'){
-                uint32_t i;
-                for (i = 0; i < str2.length(); i++){
-                    if (str2[i] != '0'){
-                        break;
-                    }
-                }
-                if (i == str2.length()){
-                    str2 = "0";
-                    sign = true;
-                }
-                else {
-                    str2 = str2.substr(i);
+        std::string str2 = str;
+        // GET SIGN
+        if (str2.at(0) == '-'){
+            sign = false;
+            str2 = str2.substr(1);
+        }
+        if (str2.at(0) == '+'){
+            str2 = str2.substr(1);
+        }
+        // DELETE ZEROS IN FRONT
+        if (str2.at(0) == '0'){
+            uint32_t i;
+            for (i = 0; i < str2.length(); i++){
+                if (str2[i] != '0'){
+                    break;
                 }
             }
-            for (int32_t i = str2.length()-1; i >= 0; i--){
-                int number = str2[static_cast<unsigned long>(i)] - '0';
-                if (!(number >=0 && number < 10)){
-                    throw "invalid input";
-                }
-                value.push_back(number);
+            if (i == str2.length()){
+                str2 = "0";
+                sign = true;
             }
+            else {
+                str2 = str2.substr(i);
+            }
+        }
+        // PARSE INPUT
+        for (int32_t i = str2.length()-1; i >= 0; i--){
+            int number = str2[static_cast<unsigned long>(i)] - '0';
+            if (!(number >=0 && number < 10)){
+                throw "invalid argument";
+            }
+            value.push_back(number);
+        }
     }
 
     // copy
@@ -88,6 +92,7 @@ public:
     // binary arithmetics operators
     BigNum& operator+=(const BigNum& rhs) {
         if (sign == rhs.sign){
+            // SUM DIGITS
             uint32_t min = this->value.size() > rhs.value.size() ? rhs.value.size() : this->value.size();
             int remainder = 0;
             for (uint32_t i = 0; i < min; i++){
@@ -95,6 +100,7 @@ public:
                 remainder = digit / 10;
                 this->value[i] = digit%10;
             }
+            // COPY OTHER NUMBERS
             if(min == this->value.size()){
                 for(uint32_t i = min; i < rhs.value.size(); i++){
                     int digit = rhs.value[i] + remainder;
@@ -111,6 +117,20 @@ public:
             if (remainder){
                 this->value.push_back(remainder);
             }
+            // DELETE ZEROS IN FRONT
+            for (int32_t i = value.size()-1; i >= 0; i--){
+                if (value[static_cast<unsigned long>(i)] == 0){
+                    value.pop_back();
+                }
+                else {
+                    break;
+                }
+                if (i == 0){
+                    value.push_back(0);
+                    sign = true;
+                    break;
+                }
+            }
             return *this;
         }
         else {
@@ -120,6 +140,7 @@ public:
 
     BigNum& operator-=(const BigNum& rhs){
         if (sign == rhs.sign) {
+            // IF SAME SET VALUE TO 0
             if (*this == rhs){
                 sign = true;
                 value.clear();
@@ -137,6 +158,7 @@ public:
                     std::swap(thisAbs, rhsAbs);
                     sign = !sign;
                 }
+                // SUB NUMBER
                 for (uint32_t i = 0; i < rhsAbs.value.size(); i++) {
                     int sub = thisAbs.value[i] - rhsAbs.value[i] - remainder;
                     if (sub < 0) {
@@ -148,6 +170,7 @@ public:
                     }
                     new_value.push_back(sub);
                 }
+                // COPY REMAINED DIGITS
                 for (uint32_t i = rhsAbs.value.size(); i < thisAbs.value.size(); i++) {
                     int sub = thisAbs.value[i] - remainder;
                     if (sub < 0) {
@@ -159,6 +182,20 @@ public:
                     }
                     new_value.push_back(sub);
                 }
+                // DELETE ZEROS IN FRONT
+                for (int32_t i = new_value.size()-1; i >= 0; i--){
+                    if (new_value[static_cast<unsigned long>(i)] == 0){
+                        new_value.pop_back();
+                    }
+                    else {
+                        break;
+                    }
+                    if (i == 0){
+                        new_value.push_back(0);
+                        sign = true;
+                        break;
+                    }
+                }
                 value = new_value;
                 return *this;
             }
@@ -167,12 +204,14 @@ public:
     }
 
     BigNum& operator*=(const BigNum& rhs){
+        // SET SIGN OF NUMBER
         if (sign != rhs.sign){
             sign = false;
         }
         else {
             sign = true;
         }
+        // MULTIPLY NUMBERS
         std::vector<int> new_value(value.size() + rhs.value.size(),0);
         for(uint32_t i = 0; i < value.size(); i++)
         {
@@ -183,8 +222,9 @@ public:
                 new_value[i+j] %= 10;
             }
         }
-        for (uint32_t i = new_value.size()-1; i >= 0; i--){
-            if (new_value[i] == 0){
+        // DELETE ZEROS IN FRONT
+        for (int32_t i = new_value.size()-1; i >= 0; i--){
+            if (new_value[static_cast<unsigned long>(i)] == 0){
                 new_value.pop_back();
             }
             else {

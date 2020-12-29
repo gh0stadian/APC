@@ -77,27 +77,27 @@ include CMakeFiles/untitled1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/untitled1.dir/flags.make
 
-CMakeFiles/untitled1.dir/bignum.cpp.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/bignum.cpp.o: ../bignum.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled1.dir/bignum.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/bignum.cpp.o -c /home/gh0stadian/CLionProjects/APC/bignum.cpp
+CMakeFiles/untitled1.dir/netpbm.cpp.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/netpbm.cpp.o: ../netpbm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled1.dir/netpbm.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/netpbm.cpp.o -c /home/gh0stadian/CLionProjects/APC/netpbm.cpp
 
-CMakeFiles/untitled1.dir/bignum.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/bignum.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gh0stadian/CLionProjects/APC/bignum.cpp > CMakeFiles/untitled1.dir/bignum.cpp.i
+CMakeFiles/untitled1.dir/netpbm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/netpbm.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gh0stadian/CLionProjects/APC/netpbm.cpp > CMakeFiles/untitled1.dir/netpbm.cpp.i
 
-CMakeFiles/untitled1.dir/bignum.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/bignum.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gh0stadian/CLionProjects/APC/bignum.cpp -o CMakeFiles/untitled1.dir/bignum.cpp.s
+CMakeFiles/untitled1.dir/netpbm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/netpbm.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gh0stadian/CLionProjects/APC/netpbm.cpp -o CMakeFiles/untitled1.dir/netpbm.cpp.s
 
 # Object files for target untitled1
 untitled1_OBJECTS = \
-"CMakeFiles/untitled1.dir/bignum.cpp.o"
+"CMakeFiles/untitled1.dir/netpbm.cpp.o"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
-untitled1: CMakeFiles/untitled1.dir/bignum.cpp.o
+untitled1: CMakeFiles/untitled1.dir/netpbm.cpp.o
 untitled1: CMakeFiles/untitled1.dir/build.make
 untitled1: CMakeFiles/untitled1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable untitled1"

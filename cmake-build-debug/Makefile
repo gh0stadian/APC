@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /home/gh0stadian/CLionProjects/APC/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/gh0stadian/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -97,6 +86,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/gh0stadian/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,19 +131,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named substring
-
-# Build rule for target.
-substring: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 substring
-.PHONY : substring
-
-# fast build rule for target.
-substring/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/substring.dir/build.make CMakeFiles/substring.dir/build
-.PHONY : substring/fast
-
-#=============================================================================
 # Target rules for targets named untitled1
 
 # Build rule for target.
@@ -156,59 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-bignum.o: bignum.cpp.o
+netpbm.o: netpbm.cpp.o
 
-.PHONY : bignum.o
-
-# target to build an object file
-bignum.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/bignum.cpp.o
-.PHONY : bignum.cpp.o
-
-bignum.i: bignum.cpp.i
-
-.PHONY : bignum.i
-
-# target to preprocess a source file
-bignum.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/bignum.cpp.i
-.PHONY : bignum.cpp.i
-
-bignum.s: bignum.cpp.s
-
-.PHONY : bignum.s
-
-# target to generate assembly for a file
-bignum.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/bignum.cpp.s
-.PHONY : bignum.cpp.s
-
-substring/substring.o: substring/substring.cpp.o
-
-.PHONY : substring/substring.o
+.PHONY : netpbm.o
 
 # target to build an object file
-substring/substring.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/substring.dir/build.make CMakeFiles/substring.dir/substring/substring.cpp.o
-.PHONY : substring/substring.cpp.o
+netpbm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/netpbm.cpp.o
+.PHONY : netpbm.cpp.o
 
-substring/substring.i: substring/substring.cpp.i
+netpbm.i: netpbm.cpp.i
 
-.PHONY : substring/substring.i
+.PHONY : netpbm.i
 
 # target to preprocess a source file
-substring/substring.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/substring.dir/build.make CMakeFiles/substring.dir/substring/substring.cpp.i
-.PHONY : substring/substring.cpp.i
+netpbm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/netpbm.cpp.i
+.PHONY : netpbm.cpp.i
 
-substring/substring.s: substring/substring.cpp.s
+netpbm.s: netpbm.cpp.s
 
-.PHONY : substring/substring.s
+.PHONY : netpbm.s
 
 # target to generate assembly for a file
-substring/substring.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/substring.dir/build.make CMakeFiles/substring.dir/substring/substring.cpp.s
-.PHONY : substring/substring.cpp.s
+netpbm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/netpbm.cpp.s
+.PHONY : netpbm.cpp.s
 
 # Help Target
 help:
@@ -218,14 +178,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... substring"
 	@echo "... untitled1"
-	@echo "... bignum.o"
-	@echo "... bignum.i"
-	@echo "... bignum.s"
-	@echo "... substring/substring.o"
-	@echo "... substring/substring.i"
-	@echo "... substring/substring.s"
+	@echo "... netpbm.o"
+	@echo "... netpbm.i"
+	@echo "... netpbm.s"
 .PHONY : help
 
 

@@ -17,16 +17,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/gh0stadian/CLionProjects/APC/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/gh0stadian/CLionProjects/APC/cmake-build-debug"/>
 				<Option type="4"/>
@@ -37,45 +27,11 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="substring">
-				<Option output="/home/gh0stadian/CLionProjects/APC/cmake-build-debug/substring" prefix_auto="0" extension_auto="0"/>
+			<Target title="edit_cache">
 				<Option working_dir="/home/gh0stadian/CLionProjects/APC/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 substring"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="substring/fast">
-				<Option output="/home/gh0stadian/CLionProjects/APC/cmake-build-debug/substring" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/gh0stadian/CLionProjects/APC/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 substring/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gh0stadian/CLionProjects/APC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -126,14 +82,8 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/gh0stadian/CLionProjects/APC/bignum.cpp">
+		<Unit filename="/home/gh0stadian/CLionProjects/APC/netpbm.cpp">
 			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/home/gh0stadian/CLionProjects/APC/bignum.h">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/home/gh0stadian/CLionProjects/APC/substring/substring.cpp">
-			<Option target="substring"/>
 		</Unit>
 		<Unit filename="/home/gh0stadian/CLionProjects/APC/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

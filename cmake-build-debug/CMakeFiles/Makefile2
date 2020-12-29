@@ -73,7 +73,6 @@ CMAKE_BINARY_DIR = /home/gh0stadian/CLionProjects/APC/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/substring.dir/all
 all: CMakeFiles/untitled1.dir/all
 
 .PHONY : all
@@ -84,37 +83,9 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/substring.dir/clean
 clean: CMakeFiles/untitled1.dir/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/substring.dir
-
-# All Build rule for target.
-CMakeFiles/substring.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/substring.dir/build.make CMakeFiles/substring.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/substring.dir/build.make CMakeFiles/substring.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target substring"
-.PHONY : CMakeFiles/substring.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/substring.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/substring.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/substring.dir/rule
-
-# Convenience name for target.
-substring: CMakeFiles/substring.dir/rule
-
-.PHONY : substring
-
-# clean rule for target.
-CMakeFiles/substring.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/substring.dir/build.make CMakeFiles/substring.dir/clean
-.PHONY : CMakeFiles/substring.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/untitled1.dir
@@ -123,7 +94,7 @@ CMakeFiles/substring.dir/clean:
 CMakeFiles/untitled1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target untitled1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gh0stadian/CLionProjects/APC/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target untitled1"
 .PHONY : CMakeFiles/untitled1.dir/all
 
 # Build rule for subdir invocation for target.
