@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/untitled1.dir/netpbm.cpp.o"
-  "untitled1"
+  "CMakeFiles/untitled1.dir/sha1.cpp.obj"
+  "CMakeFiles/untitled1.dir/sha1crack.cpp.obj"
+  "libuntitled1.dll.a"
+  "untitled1.exe"
+  "untitled1.exe.manifest"
   "untitled1.pdb"
 )
 

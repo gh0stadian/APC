@@ -174,7 +174,7 @@ std::vector<std::vector<pixel>> P4_to_universal(std::vector<unsigned char> image
         for (int j = 7; j > -1; j--, value >>= 1) {
             bits[j] = value & 1;
         }
-        unsigned long iterator = std::min(header.horizontal_size - width, (unsigned long) 8);
+        unsigned long iterator = std::min(header.horizontal_size - width, static_cast<unsigned long long>(8));
         for (unsigned long j = 0; j < iterator; j++) {
             pixel new_pixel;
             if (bits[j]) {
@@ -341,9 +341,9 @@ void write(char *format, std::vector<std::vector<pixel>> universal_image, std::o
 }
 
 int main(int argc, char *argv[]) {
-    if (argc > 4 || argc < 3) {
+    if (argc != 4) {
         std::cout << "invalid no of arguments";
-        return 1;
+        exit(1);
     }
     std::ifstream input_file(argv[1], std::ios::binary | std::ios::in);
     std::ofstream output_file(argv[2]);

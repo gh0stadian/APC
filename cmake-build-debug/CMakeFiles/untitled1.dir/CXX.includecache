@@ -6,17 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/gh0stadian/CLionProjects/APC/netpbm.cpp
+C:/Users/janba/Documents/APC/sha1.h
 iostream
 -
-fstream
+string
 -
-utility
+
+C:/Users/janba/Documents/APC/sha1crack.cpp
+iostream
 -
 vector
 -
-cmath
+thread
 -
-cstring
+chrono
 -
+future
+-
+sha1.h
+C:/Users/janba/Documents/APC/sha1.h
 
