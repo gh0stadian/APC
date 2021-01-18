@@ -58,7 +58,7 @@ void generate(int i, std::string s) {
 void crack() {
     if (flags.dictionary){
         std::cout << "dict start\n";
-        //TODO dictionary
+        //TODO dictionarys
         std::cout << "dict end\n";
     }
     for (int i = 1; i <= 4; i++) {
